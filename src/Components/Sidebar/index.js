@@ -29,13 +29,13 @@ const Sidebar = ()=>{
             </nav>
             <ul>
                 <li>
-                    <a target='_blank' rel='noreferrer' href="">
-                        <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
+                    <a target='_blank' rel='noreferrer' href="https://github.com/innzz">
+                        <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
                     </a>
                 </li>
                 <li>
-                    <a target='_blank' rel='noreferrer' href="">
-                        <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
+                    <a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/inzamam-pawaskar-6248bb226/">
+                        <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
                     </a>
                 </li>
             </ul>
