@@ -4,7 +4,7 @@ import LogoTitle from '../../assets/images/I-icon.svg';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import { useState, useEffect } from 'react';
-import Logo from './Logo';
+// import Logo from './Logo';
 import Loader from 'react-loaders';
 
 const Home = ()=> {
