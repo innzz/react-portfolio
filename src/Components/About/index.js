@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faReact,faGit,faHtml5,faCss3,faJsSquare} from '@fortawesome/free-brands-svg-icons'
+import {faReact,faGitAlt,faHtml5,faCss3,faJsSquare,faNode} from '@fortawesome/free-brands-svg-icons'
 import './index.scss'
+import Loader from 'react-loaders'
 
 function About() {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -12,6 +13,7 @@ function About() {
       }, 3000);
     }, [])
   return (
+    <>
     <div className='container about-page'>
         <div className="text-zone">
             <h1>
@@ -28,23 +30,28 @@ function About() {
         <div className="stage-cube-cont">
             <div className="cubespinner">
                 <div className="face1">
-                    <FontAwesomeIcon icon={faReact} color="#DD0031" />
+                    <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
                 </div>
-                <div className="face1">
-                    <FontAwesomeIcon icon={faJsSquare} color="#DD0031" />
+                <div className="face2">
+                    <FontAwesomeIcon icon={faNode} color="green" />
                 </div>
-                <div className="face1">
-                    <FontAwesomeIcon icon={faHtml5} color="#DD0031" />
+                <div className="face3">
+                    <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
                 </div>
-                <div className="face1">
-                    <FontAwesomeIcon icon={faCss3} color="#DD0031" />
+                <div className="face4">
+                    <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
                 </div>
-                <div className="face1">
-                    <FontAwesomeIcon icon={faGit} color="#DD0031" />
+                <div className="face5">
+                    <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                </div>
+                <div className="face6">
+                    <FontAwesomeIcon icon={faHtml5} color="#F06529" />
                 </div>
             </div>
         </div>
     </div>
+    <Loader type='pacman' />
+    </>
   )
 }
 
